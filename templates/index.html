@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class = "jumbotron text-center">
+    <h3>Welcome to Blog</h3>
+    <p>You can type a message here ...</p>
+
+</div>
+<ul>
+    {% for article in articles %}
+        <li>Article Id: {{article.id}} - Title : {{article.title}} - Content : {{article.content}}</li>
+    {% endfor %}
+
+</ul>
+{% endblock  %}
